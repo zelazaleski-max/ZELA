@@ -1,0 +1,212 @@
+/* ============================================================
+   RESPONSIVE.CSS
+   Media queries for tablet and mobile breakpoints.
+   Ensures layout adapts gracefully on all screen sizes.
+   ============================================================ */
+
+/* ============================================================
+   TABLET & SMALL DESKTOP (max-width: 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+
+    .top-stories-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .featured-story {
+        min-height: 350px;
+    }
+
+    .featured-story__title {
+        font-size: 1.8rem;
+    }
+
+    .sidebar-stories {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .main-nav__links {
+        gap: 20px;
+        font-size: 0.75rem;
+    }
+
+    .main-nav__logo {
+        font-size: 1.3rem;
+    }
+
+    .main-nav__logo i {
+        font-size: 1.6rem;
+    }
+}
+
+/* ============================================================
+   MOBILE LANDSCAPE & TABLET PORTRAIT (max-width: 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* Top bar wraps */
+    .top-bar {
+        padding: 8px 20px;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 0.7rem;
+    }
+
+    .top-bar__left,
+    .top-bar__right {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .top-bar__link {
+        font-size: 0.65rem;
+    }
+
+    .top-bar__sponsor {
+        font-size: 0.65rem;
+    }
+
+    /* Main nav wraps */
+    .main-nav {
+        padding: 12px 20px;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .main-nav__left {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .main-nav__links {
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 0.7rem;
+    }
+
+    /* Content padding */
+    .content-wrapper {
+        padding: 20px 20px;
+    }
+
+    .section-label {
+        font-size: 1.3rem;
+    }
+
+    /* Sidebar stacks vertically */
+    .sidebar-stories {
+        grid-template-columns: 1fr;
+    }
+
+    /* Featured story */
+    .featured-story__title {
+        font-size: 1.4rem;
+    }
+
+    /* Sidebar cards */
+    .sidebar-card__img {
+        width: 110px;
+        height: 80px;
+    }
+
+    .sidebar-card__title {
+        font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 20px;
+    }
+}
+
+/* ============================================================
+   MOBILE PORTRAIT (max-width: 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+
+    .top-bar__brand {
+        font-size: 0.75rem;
+        padding: 3px 10px;
+    }
+
+    .main-nav__logo {
+        font-size: 1.1rem;
+    }
+
+    .main-nav__logo i {
+        font-size: 1.4rem;
+    }
+
+    .main-nav__links {
+        font-size: 0.65rem;
+        gap: 10px;
+    }
+
+    .main-nav__icons {
+        font-size: 1rem;
+        gap: 14px;
+    }
+
+    .content-wrapper {
+        padding: 16px 14px;
+    }
+
+    .section-label {
+        font-size: 1.1rem;
+        margin-bottom: 14px;
+    }
+
+    /* Featured story */
+    .featured-story {
+        min-height: 260px;
+    }
+
+    .featured-story__overlay {
+        padding: 20px 16px 16px 16px;
+    }
+
+    .featured-story__title {
+        font-size: 1.1rem;
+    }
+
+    .featured-story__sub {
+        font-size: 0.75rem;
+    }
+
+    /* Sidebar cards */
+    .sidebar-card {
+        gap: 10px;
+    }
+
+    .sidebar-card__img {
+        width: 90px;
+        height: 70px;
+    }
+
+    .sidebar-card__title {
+        font-size: 0.85rem;
+    }
+
+    .sidebar-card__meta {
+        font-size: 0.7rem;
+    }
+
+    /* More news */
+    .more-news-placeholder {
+        height: 130px;
+        font-size: 0.8rem;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    /* Footer */
+    .site-footer {
+        font-size: 0.7rem;
+        padding: 16px;
+    }
+}
