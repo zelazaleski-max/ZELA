@@ -1,6 +1,6 @@
 /* ============================================================
    MAIN.JS
-   Handles interactive behavior for the Zela FC website.
+   Handles interactive behavior for the DIPELA UNITED FC website.
    - Sidebar & featured card click tracking (console logs)
    - Navigation link active state
    - Mobile-friendly search toggle
@@ -14,7 +14,7 @@
      * @param {string} title - The title of the story that was clicked.
      */
     function logStoryClick(title) {
-        console.log('[Zela FC] Story clicked: ' + title);
+        console.log('[Dipela united FC] Story clicked: ' + title);
     }
 
     /**
@@ -41,7 +41,7 @@
             });
         });
 
-        console.log('[Zela FC] ' + sidebarCards.length + ' sidebar stories initialised.');
+        console.log('[DIPELA FC] ' + sidebarCards.length + ' sidebar stories initialised.');
     }
 
     /**
@@ -66,7 +66,7 @@
                 });
                 // Apply to clicked
                 link.style.borderBottomColor = '#ffd700';
-                console.log('[Zela FC] Navigating to: ' + link.textContent.trim());
+                console.log('[DIPELA UNITED FC] Navigating to: ' + link.textContent.trim());
             });
         });
     }
@@ -79,9 +79,9 @@
         var searchBtn = document.querySelector('.main-nav__icon-btn[aria-label="Search"]');
         if (searchBtn) {
             searchBtn.addEventListener('click', function () {
-                var query = prompt('Search Zela FC:', '');
+                var query = prompt('Search DIPELA FC:', '');
                 if (query) {
-                    console.log('[Zela FC] Search query: ' + query);
+                    console.log('[DIPELA FC] Search query: ' + query);
                     alert('Searching for: "' + query + '"\n(Search functionality is a demo.)');
                 }
             });
@@ -104,7 +104,7 @@
      * Log page load event.
      */
     function initPageLoad() {
-        console.log('%c⚽ Zela FC — Official Website Loaded', 'color: #b30000; font-size: 14px; font-weight: bold;');
+        console.log('%c⚽ DIPELA FC — Official Website Loaded', 'color: #b30000; font-size: 14px; font-weight: bold;');
         console.log('Top stories, sidebar, and navigation initialised.');
     }
 
